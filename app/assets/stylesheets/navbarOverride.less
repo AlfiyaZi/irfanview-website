@@ -1,0 +1,74 @@
+@import "variables";
+.navbar-inverse {
+  background-color: @brand;
+  .global-shadow;
+  border-color:darken(@brand,5%);
+  .navbar-nav {
+    > .active > a, > .open > a, > .open > a, > .open > a:hover, > .open > a, > .open > a:hover, > .open > a:focus {
+      background-color:darken(@brand,10%);
+      color:@brand-contrast;
+    }
+    > .active > a:hover {
+      background-color:darken(@brand,5%);
+      color:@brand-contrast;
+    }
+    > .active > a:focus {
+      color:@brand-contrast;
+    }
+    > li {
+      > a:hover, > a:focus {
+        background-color:darken(@brand,5%);
+        color:@brand-contrast;
+      }
+      > a {
+        color:@brand-contrast;
+      }
+    }
+    > .dropdown > a .caret {
+      border-top-color:@brand-contrast;
+      border-bottom-color:@brand-contrast;
+    }
+    > .dropdown > a:hover .caret {
+      border-top-color:@brand-contrast;
+      border-bottom-color:@brand-contrast;
+    }
+    .open .dropdown-menu {
+      > li > a {
+        color: @brand-contrast;
+        &:hover { background-color: darken(@brand,5%); }
+      }
+      .divider {
+        background-color: @brand-contrast;
+      }
+    }
+  }
+  .navbar-brand {
+    color:@brand-contrast;
+    &:hover{
+      color:@brand-contrast;
+    }
+  }
+  .navbar-toggle {
+    border-color:darken(@brand,15%);
+    &:hover{ background-color: darken(@brand,5%); }
+    &:focus{ background-color: darken(@brand,10%); }
+  }
+  .navbar-collapse, .navbar-form {
+    border-color: darken(@brand,10%);
+  }
+}
+.dropdown-menu {
+  background-color:darken(@brand,5%);
+  border-color:darken(@brand,20%);
+  .global-shadow;
+  > li {
+    > a:hover, > a:focus {
+      background-color:darken(@brand,10%);
+      background-image:none;
+      color:@brand-contrast;
+    }
+    > a {
+      color:@brand-contrast;
+    }
+  }
+}
