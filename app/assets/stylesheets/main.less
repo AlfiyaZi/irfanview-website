@@ -1,8 +1,10 @@
 @import "bootstrap/bootstrap";
+@import "variables";
 @import "navbarOverride";
 @import "navTabsOverride";
+@import "index";
 
-
+h1, h2, h3, h4, h5{.brand-font;}
 *{
   border-radius: 0px !important;
 }
@@ -20,5 +22,7 @@ a {
 
 .container {
   width: 100%;
-  max-width: 1000px;
+  max-width: @page-width;
 }
+
+footer { text-align: center; max-width: @page-width; border-top: 1px solid @brand; margin: 0 auto; padding: 10px; font-size: 12px; }
