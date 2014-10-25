@@ -4,9 +4,12 @@
 @import "navTabsOverride";
 @import "index";
 
-h1, h2, h3, h4, h5{.brand-font;}
-*{
-  border-radius: 0px !important;
+*{ border-radius: 0px !important; }
+
+body { background: url("../images/pattern.png")}
+h1, h2, h3, h4, h5{
+  color: @brand;
+  .brand-font;
 }
 
 a {
@@ -17,7 +20,11 @@ a {
 }
 
 #page-content {
-  padding-top: 65px;
+  padding: 65px 0 15px 0;
+  background: @brand-contrast;
+  max-width: @page-width;
+  margin: 0 auto;
+  .global-shadow;
 }
 
 .container {
@@ -25,4 +32,4 @@ a {
   max-width: @page-width;
 }
 
-footer { text-align: center; max-width: @page-width; border-top: 1px solid @brand; margin: 0 auto; padding: 10px; font-size: 12px; }
+footer { text-align: center; max-width: @page-width; margin: 0 auto; padding: 10px; font-size: 12px;}
