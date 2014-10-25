@@ -5,24 +5,23 @@
         <li><a href="#skins" role="tab" data-toggle="tab">Skins</a></li>
         <li><a href="#languages" role="tab" data-toggle="tab">Additional languages</a></li>
         <li><a href="#changelog" role="tab" data-toggle="tab">Changelog</a></li>
-
     </ul>
 
     <div class="tab-content">
         <div class="tab-pane active" id="download">
-            Download
+            @views.html.downloadTabs.download()
         </div>
         <div class="tab-pane" id="plugins">
-            Skins
+            @views.html.downloadTabs.plugins()
         </div>
         <div class="tab-pane" id="skins">
-            Additional languages
+            @views.html.downloadTabs.skins()
         </div>
         <div class="tab-pane" id="languages">
-            Mirrors
+            @views.html.downloadTabs.languages()
         </div>
         <div class="tab-pane" id="changelog">
-            Mirrors
+            @views.html.downloadTabs.changelog()
         </div>
     </div>
 }
