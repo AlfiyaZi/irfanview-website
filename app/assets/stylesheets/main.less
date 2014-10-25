@@ -1,8 +1,17 @@
 @import "bootstrap/bootstrap";
 @import "navbarOverride";
+@import "navTabsOverride";
+
 
 *{
   border-radius: 0px !important;
+}
+
+a {
+  color: lighten(@brand, 15%);
+  &:hover {
+    color: darken(@brand, 5%);
+  }
 }
 
 #page-content {
@@ -11,5 +20,5 @@
 
 .container {
   width: 100%;
-  max-width: 1200px;
+  max-width: 1000px;
 }
