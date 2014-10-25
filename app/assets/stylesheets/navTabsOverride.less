@@ -1,0 +1,36 @@
+@grayLight: #222;
+.nav-tabs-container {
+
+}
+
+.nav-tabs {
+  border: 0;
+  .brand-font;
+  font-size: 18px;
+  li a {
+    padding: 2px 10px;
+    &:hover, &:focus {
+      border-color: white;
+      background: inherit;
+    }
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .nav {
+    padding-left:2px;
+    padding-right:2px;
+  }
+  .nav li {
+    display:block !important;
+    width:100%;
+    margin:0px;
+  }
+  .nav li.active {
+    margin: 0px;
+    a {
+      border: 1px solid #ddd;
+      &:hover{ border: 1px solid #ddd; }
+    }
+  }
+}
