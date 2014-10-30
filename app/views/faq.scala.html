@@ -4,6 +4,7 @@
         <li class="active"><a href="#basic" role="tab" data-toggle="tab">Basic</a></li>
         <li><a href="#advanced" role="tab" data-toggle="tab">Advanced</a></li>
         <li><a href="#admin" role="tab" data-toggle="tab">Administrator questions</a></li>
+        <li><a href="#languages" role="tab" data-toggle="tab">Other languages</a></li>
     </ul>
 
     <div class="tab-content">
@@ -15,6 +16,9 @@
         </div>
         <div class="tab-pane" id="admin">
         @views.html.faqTabs.admin()
+        </div>
+        <div class="tab-pane" id="languages">
+        @views.html.faqTabs.languages()
         </div>
     </div>
 
