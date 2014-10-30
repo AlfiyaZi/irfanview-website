@@ -7,7 +7,6 @@ GET        /                                    controllers.Application.index()
 GET        /download.html                       controllers.Application.download()
 GET        /faq.html                            controllers.Application.faq()
 GET        /about.html                          controllers.Application.about()
-GET        /donate.html                         controllers.Application.donate()
 GET        /nice-sites.html                     controllers.Application.niceSites()
 
 
