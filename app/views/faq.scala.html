@@ -1,21 +1,26 @@
+@(qaList : java.util.List[QA])
 @main("IrfanView - Frequently Asked Questions") {
 
     <ul class="nav nav-tabs" role="tablist">
         <li class="active"><a href="#basic" role="tab" data-toggle="tab">Basic</a></li>
         <li><a href="#advanced" role="tab" data-toggle="tab">Advanced</a></li>
         <li><a href="#admin" role="tab" data-toggle="tab">Administrator questions</a></li>
+        <li><a href="#tutorials" role="tab" data-toggle="tab">Tutorials</a></li>
         <li><a href="#languages" role="tab" data-toggle="tab">Other languages</a></li>
     </ul>
 
     <div class="tab-content">
         <div class="tab-pane active" id="basic">
-        @views.html.faqTabs.basic()
+        @views.html.faqTabs.standardQA(qaList.filter(q => q.getCategory.equals("basic")))
         </div>
         <div class="tab-pane" id="advanced">
-        @views.html.faqTabs.advanced()
+        @views.html.faqTabs.standardQA(qaList.filter(q => q.getCategory.equals("advanced")))
         </div>
         <div class="tab-pane" id="admin">
-        @views.html.faqTabs.admin()
+        @views.html.faqTabs.standardQA(qaList.filter(q => q.getCategory.equals("admin")))
+        </div>
+        <div class="tab-pane" id="tutorials">
+        @views.html.faqTabs.tutorials()
         </div>
         <div class="tab-pane" id="languages">
         @views.html.faqTabs.languages()

@@ -1,0 +1,11 @@
+@(qaList : java.util.List[QA])
+
+<ul>
+    @for((qa, index) <- qaList.zipWithIndex){
+        <li><a href="#@{qa.getCategory()+index}">@qa.getQuestion()</a></li>
+    }
+</ul>
+
+@for((qa, index) <- qaList.zipWithIndex){
+    @views.html.faqTabs.qa({qa.getCategory()+index}, qa.getQuestion(), qa.getAnswer())
+}

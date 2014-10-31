@@ -1,5 +1,6 @@
 package controllers;
 
+import models.QA;
 import play.mvc.*;
 import views.html.index;
 import views.html.download;
@@ -19,7 +20,7 @@ public class Application extends Controller {
     }
 
     public static Result faq() {
-        return ok(faq.render());
+        return ok(faq.render(new QA().getList()));
     }
 
     public static Result about() {
