@@ -1,5 +1,3 @@
-@(id: String, question: String, answer: String)
-<div id="@id" class="qa-wrapper">
-    <p><span class="qa-q">Q:</span> @question </p>
-    <p><span class="qa-a">A:</span> @answer </p>
-</div>
+@(id: String, question: String)(answer : Html)
+<h3 id="@id" class="faq-question">@Html(question)</h3>
+@answer
