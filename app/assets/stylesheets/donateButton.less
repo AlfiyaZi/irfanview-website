@@ -1,8 +1,8 @@
 @import "variables";
 
 #donate-button {
-  box-shadow:inset 0px 34px 0px -17px #e35151;
-  background-color: #cc2b2b;
+  box-shadow:inset 0px 34px 0px -17px lighten(@brand, 10%);
+  background-color: @brand;
   border: 0;
   cursor:pointer;
   color:#ffffff;
@@ -11,7 +11,7 @@
   text-decoration:none;
 }
 #donate-button:hover {
-  background-color: #cc4945;
+  background-color: lighten(@brand, 5%);
 }
 #donate-button:active {
   position:relative;
