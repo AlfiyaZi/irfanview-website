@@ -6,7 +6,7 @@ import views.html.download;
 import views.html.faq;
 import views.html.about;
 import views.html.niceSites;
-
+import views.html.changeLog;
 
 public class Application extends Controller {
 
@@ -28,6 +28,10 @@ public class Application extends Controller {
 
     public static Result niceSites() {
         return ok(niceSites.render());
+    }
+
+    public static Result changeLog() {
+        return ok(changeLog.render());
     }
 
 }
