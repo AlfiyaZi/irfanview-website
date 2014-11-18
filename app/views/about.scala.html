@@ -1,41 +1,46 @@
 @main("IrfanView - About") {
-    <h2>About IrfanView</h2>
 
+    <h2>About IrfanView</h2>
     <p>
         IrfanView is a very fast, small, compact and innovative FREEWARE (for non-commercial use) graphic viewer
-        for Windows 9x, ME, NT, 2000, XP, 2003 , 2008, Vista, Windows 7, Windows 8.
-    </p>
-    <p>
-        It is designed to be simple for beginners and powerful for professionals.
-    </p>
-
-    <p>
-        IrfanView seeks to create unique, new and interesting features, unlike some other graphic viewers,
-        whose whole "creativity" is based on feature cloning, stealing of ideas and whole dialogs from ACDSee and/or
-        IrfanView! (for example: XnView has been stealing/cloning features and whole dialogs from IrfanView, for 10+ years).
+        for Windows 9x, ME, NT, 2000, XP, 2003 , 2008, Vista, Windows 7, Windows 8.<br>
+        It is designed to be simple for beginners and powerful for professionals,
+        and seeks to create unique, new and interesting features.
     </p>
 
     <p>
-        IrfanView was the first Windows graphic viewer WORLDWIDE with Multiple (animated) GIF support.
-        One of the first graphic viewers WORLDWIDE with Multipage TIF support.
-        The first graphic viewer WORLDWIDE with Multiple ICO support.
+        IrfanView was the first graphic viewer with Multiple ICO support.
+        The first Windows graphic viewer with Multiple (animated) GIF support.
+        Among the first graphic viewers with Multipage TIF support.
     </p>
 
-    <h2>About the author</h2>
+    <h2>A message from the author</h2>
+    <div class="row">
 
-    <p>
-        I would like to sincerely thank all you faithful IrfanView (pronounce "EarfanView") users who send me messages
-        of good wishes, congratulations and appreciation. It is often difficult for me to answer all the e-mail
-        I receive, but I would like you to know that every one of your messages are read and appreciated.
-    </p>
+        <div class="col-sm-8">
 
-    <p>
-        In the years since IrfanView hit the Net I've received more than 65,000 e-mail messages thanking me,
-        congratulating me, and wishing me well. And at least a dozen women have wanted me to be the father of
-        their children ;-) I've tried to answer all the messages with at least a Thank You.
-        I very much appreciate all the messages I receive.
-        Thank you!
-    </p>
+            <p>
+                I would like to sincerely thank all you faithful IrfanView (pronounce "EarfanView") users who send me messages
+                of good wishes, congratulations and appreciation. It is often difficult for me to answer all the e-mail
+                I receive, but I would like you to know that every one of your messages are read and appreciated.
+            </p>
+
+            <p>
+                In the years since IrfanView hit the Net I've received more than 65,000 e-mail messages thanking me,
+                congratulating me, and wishing me well. And at least a dozen women have wanted me to be the father of
+                their children ;-) I've tried to answer all the messages with at least a Thank You.
+                I very much appreciate all the messages I receive.
+                Thank you!
+            </p>
+        </div>
+
+        <div class="col-sm-2 col-xs-6">
+            <img class="full-width-img" src="@routes.Assets.at("images/about/irfanTwo.jpg")" alt="A young Irfan Skiljan">
+        </div>
+        <div class="col-sm-2 col-xs-6">
+            <img class="full-width-img" src="@routes.Assets.at("images/about/irfanOne.jpg")" alt="A young Irfan Skiljan">
+        </div>
+    </div>
 
     <p>
         Nachdem ich seit einigen Jährchen in Österreich bin und in Wien studiert habe, spreche ich selbstverständlich
@@ -51,4 +56,14 @@
         Zato navali raja, ali molim vas bez politike ...
     </p>
 
+    <h3>Pictures from my homeland</h3>
+        <p>Jajce, Bosnia, with its beautiful waterfall, is the town where I was born.</p>
+        <div class="row">
+            <div class="col-sm-6">
+                <img class="full-width-img" src="@routes.Assets.at("images/about/jajceTwo.jpg")" alt="Jajce, Bosnia">
+            </div>
+            <div class="col-sm-6">
+                <img class="full-width-img" src="@routes.Assets.at("images/about/jajceOne.jpg")" alt="Jajce, Bosnia">
+            </div>
+    </div>
 }
