@@ -9,6 +9,7 @@
             <li><a href="#skins" role="tab" data-toggle="tab">Skins</a></li>
             <li><a href="#languages" role="tab" data-toggle="tab">Additional languages</a></li>
             <li><a href="#changelog" role="tab" data-toggle="tab">Changelog</a></li>
+            <li class="pull-right"><a href="#checksums" role="tab" data-toggle="tab">Checksums</a></li>
         </ul>
 
         <div class="tab-content">
@@ -26,6 +27,9 @@
             </div>
             <div class="tab-pane" id="changelog">
                 @views.html.downloadTabs.changelog()
+            </div>
+            <div class="tab-pane" id="checksums">
+                @views.html.downloadTabs.checkSums()
             </div>
         </div>
 
