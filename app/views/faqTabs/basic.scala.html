@@ -1,7 +1,240 @@
-<ul>
-    <li><a href="#basic0">Is there a direct download link for IrfanView and Plugins?</a></li>
+<ul class="faq-list">
+    <li><a href="#basic00">Is there a direct download link for IrfanView and Plugins?</a></li>
+    <li><a href="#basic01">How do I create a slideshow on a CD that starts automatically when you insert the CD?</a></li>
+    <li><a href="#basic02">Sometimes I get the error message "Video not available, cannot find decompressor." What's wrong?</a></li>
+    <li><a href="#basic03">How to reduce saved file size?</a></li>
+    <li><a href="#basic04">IrfanView shows all my images in black and white! Why?</a></li>
+    <li><a href="#basic05">IrfanView can't read filenames/paths with chinese, japanese, polish etc. characters.</a></li>
+    <li><a href="#basic06">How to use JPG lossless operations (Rotation, IPTC, Comment) in batch mode?</a></li>
+    <li><a href="#basic07">Is there a portable IrfanView version (for USB sticks, CDs etc.)?</a></li>
+    <li><a href="#basic08">How can I make IrfanView as my default viewer?</a></li>
+    <li><a href="#basic09">If I save some images as JPG and set the file size option, I receive a save error message. Why?</a></li>
+    <li><a href="#basic10">Why is RAW loading slow (Camera RAW formats, e.g. CR2)?</a></li>
+    <li><a href="#basic11">Why are some edit menus or the red eye menu greyed out?</a></li>
+    <li><a href="#basic12">How to sort pictures by date-taken?</a></li>
+    <li><a href="#basic13">How to use Batch conversion/rename to sort result pictures in folders with date-taken in folder name?</a></li>
+    <li><a href="#basic14">How can I batch rename "JPG" files to "jpg" (lower case extensions)?</a></li>
+    <li><a href="#basic15">How can I add background sound for automatic slideshow or EXE/SCR?</a></li>
+    <li><a href="#basic16">Why I can't scroll a large, zoomed (larger than screen) image in fullscreen mode using arrow/page keys?</a></li>
+    <li><a href="#basic17">I downloaded IrfanView (or PlugIns) but when I start it, I get the message "This is not a valid Win32 application"?</a></li>
+    <li><a href="#basic18"></a></li>
+    <li><a href="#basic19"></a></li>
+    <li><a href="#basic20"></a></li>
+    <li><a href="#basic21"></a></li>
+    <li><a href="#basic22"></a></li>
+    <li><a href="#basic23"></a></li>
+    <li><a href="#basic24"></a></li>
+    <li><a href="#basic25"></a></li>
+    <li><a href="#basic26"></a></li>
+    <li><a href="#basic27"></a></li>
+    <li><a href="#basic28"></a></li>
+    <li><a href="#basic29"></a></li>
+
 </ul>
 
-@views.html.faqTabs.qa("basic0", "Is there a direct download link for IrfanView and Plugins?"){
-    Yup!
+@views.html.faqTabs.qa("basic00", "Is there a direct download link for IrfanView and Plugins?"){
+    <p>Yes, please visit www.irfanview.com/download.html</p>
+    <em>
+        Please take care when downloading IrfanView from software sites which are not listed on the download page.
+        Some sites use custom/unknown downloaders which can contain malware, and some sites ask you to pay.
+        IrfanView is free for personal use. The original filenames and SHA-checksums for IrfanView and Plugins
+        can be found on the downloads page.
+    </em>
+}
+
+@views.html.faqTabs.qa("basic01", "How do I create a slideshow on a CD that starts automatically when you insert the CD?"){
+    <p>
+        You can create either a self running EXE slideshow file (in the slideshow dialog) or you can copy the
+        original files to the CD and use a TXT file. The easiest way is to:
+    </p>
+    <ol>
+        <li>Create and test (play) the slideshow in the Slideshow dialog.</li>
+        <li>Press in the slideshow dialog the button Burn to CD/DVD. (Note: The Burning/Nero PlugIn for IrfanView must be installed.)</li>
+        <li>Choose the burn option, Data-CD/DVD is default/recommended.</li>
+        <li>Insert empty CD/DVD-R/-RW in your burning device and burn it.</li>
+    </ol>
+    <p>Please consult the in-program-help (press F1) for more details</p>
+}
+
+@views.html.faqTabs.qa("basic02", "Sometimes I get the error message \"Video not available, cannot find decompressor.\" What's wrong?"){
+    <p>
+        The correct video codec is not installed. See the "Image->Information" menu for the codec name,
+        and download the correct codec. A good codec pack is the
+        <a href="http://www.codecguide.com/download_k-lite_codec_pack_mega.htm" target="_blank">K-Lite Codec Pack</a>.
+        It contains most popular video/audio codecs. If you don't want to download K-Lite, you can probably find the
+        correct codec on one of these sites:
+    </p>
+    <ul>
+        <li><a href="http://www.free-codecs.com" target="_blank">Free-Codecs.com</a></li>
+        <li><a href="http://codecs.necromancers.ru" target="_blank">All Codecs and Decompressors</a></li>
+        <li><a href="http://codecguide.com/" target="_blank">Codec-Guide</a></li>
+        <li><a href="http://www.fourcc.org/indexcod.htm" target="_blank">www.FOURCC.org - Video Codec Definitions</a></li>
+        <li><a href="http://www.microsoft.com/downloads/results.aspx?productID=&freetext=media+8&DisplayLang=en" target="_blank">Microsoft Codecs</a></li>
+        <li><a href="http://www.videohelp.com" target="_blank">VideoHelp.com</a></li>
+    </ul>
+}
+
+@views.html.faqTabs.qa("basic03", "How to reduce JPG file size?"){
+    <p>
+        In 4.20, a new JPG save option "Set file size" was introduced (IrfanView PlugIns must be installed).
+        To do it manually:
+    </p>
+    <ol>
+        <li>Open the image.</li>
+        <li>Go to menu Image->Resize/Resample and reduce the image dimensions in pixels.</li>
+        <li>Go to menu File->Save as, choose JPG and save as new file (try options like lower JPG quality, uncheck EXIF, etc.).</li>
+        <li>Look at the file size of the new file. If still too big, repeat using smaller dimensions and/or lower quality.</li>
+    </ol>
+    <em>For many images, use File->Batch Conversion, Advanced options.</em>
+}
+
+@views.html.faqTabs.qa("basic04", "IrfanView shows all my images in black and white! Why?"){
+    <p>
+        The load option for JPGs "Load as grayscale" in "Properties->JPG/PCD/GIF" is probably activated, please uncheck!
+        <br>
+        Note: in the Save dialog, see JPG format save options. The option "Save as grayscale" should not be active.
+    </p>
+}
+
+@views.html.faqTabs.qa("basic05", "IrfanView can't read filenames/paths with chinese, japanese, polish etc. characters."){
+    <p>Please activate the UNICODE PlugIn in Properties->Languages.</p>
+}
+
+@views.html.faqTabs.qa("basic06", "How to use JPG lossless operations (Rotation, IPTC, Comment) in batch mode?"){
+    <p>
+        Start the Thumbnail window, open the folder with JPGs, select many JPGs and see
+        in thumbnail menu File for JPG Lossless Operations -> Lossless transformations with selected thumbs.
+        <br>
+        Note: The auto-rotation option works only if the EXIF orientation tag is properly saved (not top-left).
+    </p>
+}
+
+@views.html.faqTabs.qa("basic07", "Is there a portable IrfanView version (for USB sticks, CDs etc.)?"){
+    <p>Yes, every IrfanView version is portable. You can:</p>
+    <ol>
+        <li>Copy your existing/installed IrfanView folder to USB stick (recommended), or</li>
+        <li>Use the normal installer and install IrfanView to an USB stick folder, or</li>
+        <li>Use the ZIP version and unzip to a USB stick folder.</li>
+    </ol>
+    Note: the ZIP version of IrfanView is always available on www.irfanview.com/download.html.
+}
+
+@views.html.faqTabs.qa("basic08", "How can I make IrfanView as my default viewer?"){
+    <p>Start IrfanView, go to 'Properties->Extensions' and associate your desired extensions.</p>
+}
+
+@views.html.faqTabs.qa("basic09", "If I save some images as JPG and set the file size option, I receive a save error message. Why?"){
+    <p>
+        You can't reach every possible file size using JPG compression.
+        The JPG file/image can't be saved smaller than the JPG file/image with quality of 1, means there are
+        certain limitations regarding minimal JPG file size. If you set a smaller file size than JPG (with quality of 1)
+        can compress, you will get an error message. If you want to reach the desired file size, you have to resize the
+        image first (reduce image dimensions in menu: Image->Resize) OR disable the file size option and save only
+        using JPG quality.
+    </p>
+}
+
+@views.html.faqTabs.qa("basic10", "Why is RAW loading slow (Camera RAW formats, e.g. CR2)?"){
+    <p>
+        This depends which RAW plugin options are used in 'Properties->PlugIns'.
+        The preview option is the fastest,
+        Half-size is fast and if both are deactivated: the full RAW image is loaded => very slow.
+    </p>
+}
+
+@views.html.faqTabs.qa("basic11", "Why are some edit menus or the red eye menu greyed out?"){
+    <p>
+        Many edit options or red eye reduction works on selections only.
+        Create first a selection (outline rectangle) in the image using the left mouse button.
+    </p>
+}
+
+@views.html.faqTabs.qa("basic12", "How to sort pictures by date-taken?"){
+    <p>Open Thumbnails window and load a folder. See thumbnails sort menu, use Sort by EXIF date. </p>
+}
+
+@views.html.faqTabs.qa("basic13", "How to use Batch conversion/rename to sort result pictures in folders with date-taken in folder name?"){
+    <p>
+        In the Batch dialog, you can use Placeholders in the name of the output directory.
+        If you set a directory name like "C:\sorted images\$E36868(%Y_%m_%d)\",
+        you will save the result files in folders with date-taken (format: YYYY_MM_DD) in folder name,
+        like "C:\sorted images\2011_06_23\".
+    </p>
+}
+
+@views.html.faqTabs.qa("basic14", "How can I batch rename \"JPG\" files to \"jpg\" (lower case extensions)?"){
+    <p>
+        In the Batch-Conversion dialog use the rename pattern: $N.jpg
+        (Be sure you only have JPG files selected/added to the input list).
+    </p>
+}
+
+@views.html.faqTabs.qa("basic15", "How can I add background sound for automatic slideshow or EXE/SCR?"){
+    <p>
+        In the slideshow dialog put/add MP3 files into the slideshow file list, usually at the begin or before an image.
+        The MP3 file is played until it ends or until next MP3 is loaded from the file list.
+        IrfanView PlugIns should be also installed, at least the MP3 PlugIn.
+    </p>
+}
+
+@views.html.faqTabs.qa("basic16", "Why I can't scroll a large, zoomed (larger than screen) image in fullscreen mode using arrow/page keys?"){
+    <p>
+        Either is the image not really larger than screen or the option
+        Properties->Browsing/Editing->Jump to next image ... active, please uncheck.
+    </p>
+}
+
+@views.html.faqTabs.qa("basic17", "I downloaded IrfanView (or PlugIns) but when I start it, I get the message \"This is not a valid Win32 application\"?"){
+    <p>
+        This message is shown for damaged/incomplete EXE files, probably a download error.
+        Download again, try another mirror or location.
+    </p>
+}
+
+@views.html.faqTabs.qa("basic18", ""){
+    <p></p>
+}
+
+@views.html.faqTabs.qa("basic19", ""){
+    <p></p>
+}
+
+@views.html.faqTabs.qa("basic20", ""){
+    <p></p>
+}
+
+@views.html.faqTabs.qa("basic21", ""){
+    <p></p>
+}
+
+@views.html.faqTabs.qa("basic22", ""){
+    <p></p>
+}
+
+@views.html.faqTabs.qa("basic23", ""){
+    <p></p>
+}
+
+@views.html.faqTabs.qa("basic24", ""){
+    <p></p>
+}
+
+@views.html.faqTabs.qa("basic25", ""){
+    <p></p>
+}
+
+@views.html.faqTabs.qa("basic26", ""){
+    <p></p>
+}
+
+@views.html.faqTabs.qa("basic27", ""){
+    <p></p>
+}
+
+@views.html.faqTabs.qa("basic28", ""){
+    <p></p>
+}
+
+@views.html.faqTabs.qa("basic29", ""){
+    <p></p>
 }
