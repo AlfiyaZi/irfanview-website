@@ -16,10 +16,12 @@
   }
 }
 
-.nav-tabs>li.active>a, .nav-tabs>li.active>a:hover, .nav-tabs>li.active>a:focus{
-  color: darken(@brand, 10%);
-  border-color: @brand-contrast;
-  border-bottom: 1px solid @brand;
+.nav-tabs > li.active {
+  > a, > a:hover, > a:focus {
+    color: darken(@brand, 10%);
+    border-color: @brand-contrast;
+    border-bottom: 1px solid @brand;
+  }
 }
 
 @media screen and (max-width: 650px) {
@@ -30,11 +32,9 @@
     a{margin: 0; padding: 2px 10px}
     a:hover{border: 1px solid @brand-contrast;}
   }
-  .nav-tabs li.active {
-    margin: 0px;
-    a {
+  .nav-tabs > li.active {
+    > a, > a:hover, > a:focus {
       border: 1px solid @brand;
-      &:hover{ border: 1px solid @brand; }
     }
   }
 }
