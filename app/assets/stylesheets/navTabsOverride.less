@@ -1,9 +1,10 @@
 @import "variables";
 
 .nav-tabs {
+  margin: 15px 0 25px;
   border: 0;
   .brand-font;
-  font-size: 18px;
+  font-size: 22px;
   li a {
     padding: 2px 2px 0 2px;
     margin-right: 16px;
@@ -21,7 +22,7 @@
   border-bottom: 1px solid @brand;
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 650px) {
   .nav-tabs li {
     display:block !important;
     width:100%;
@@ -36,8 +37,4 @@
       &:hover{ border: 1px solid @brand; }
     }
   }
-}
-
-.tab-content {
-  margin-top: 15px;
 }
